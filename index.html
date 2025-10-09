@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bet-le-Bet | Premium Home & Virtual Services</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="overlay">
+      <h1>Bet-le-Bet</h1>
+      <p>Premium Home & Virtual Services for Families and Professionals</p>
+      <a href="#services" class="cta-btn">Explore Services</a>
+    </div>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#" onclick="scrollToSection(event, 'services')">Services</a></li>
+      <li><a href="#" onclick="scrollToSection(event, 'book')">Book</a></li>
+      <li><a href="#" onclick="scrollToSection(event, 'provider')">Become a Provider</a></li>
+    </ul>
+  </nav>
+
+  <section id="services" class="services">
+    <h2>Our Services</h2>
+    <div class="service-grid">
+      <div class="service-card">
+        <h3>Home Care & Health Counseling</h3>
+        <p>Medical visits, wellness checks, and family care with professional follow-up support.</p>
+      </div>
+      <div class="service-card">
+        <h3>Hairdressing & Beauty</h3>
+        <p>In-home salon and grooming services from professional stylists.</p>
+      </div>
+      <div class="service-card">
+        <h3>Online & In-Person Tutoring</h3>
+        <p>Private tutoring sessions for students and professionals in various fields.</p>
+      </div>
+      <div class="service-card">
+        <h3>Day Maid / Domestic Help</h3>
+        <p>Reliable home assistants who provide daily help and return home after work.</p>
+      </div>
+      <div class="service-card">
+        <h3>Consultancy & Professional Support</h3>
+        <p>Expert advisory for business, legal, and personal growth needs.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="book" class="form-section">
+    <h2>Book a Service</h2>
+    <form>
+      <input type="text" placeholder="Your Full Name" required />
+      <select required>
+        <option value="">Select a Service</option>
+        <option>Home Care</option>
+        <option>Hairdressing</option>
+        <option>Tutoring</option>
+        <option>Day Maid</option>
+        <option>Consultancy</option>
+      </select>
+      <input type="date" required />
+      <textarea placeholder="Additional Details (optional)"></textarea>
+      <button type="submit">Submit Booking</button>
+    </form>
+  </section>
+
+  <section id="provider" class="form-section">
+    <h2>Become a Service Provider</h2>
+    <form>
+      <input type="text" placeholder="Your Full Name" required />
+      <input type="text" placeholder="Type of Service You Provide" required />
+      <input type="text" placeholder="Your Contact Info" required />
+      <button type="submit">Submit Application</button>
+    </form>
+  </section>
+
+  <footer>
+    © 2025 Bet-le-Bet | Home & Virtual Services
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
