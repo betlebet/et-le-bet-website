@@ -1,0 +1,14 @@
+{
+  "name": "@betlebet/et-le-bet-website",
+  "version": "1.0.0",
+  "description": "Betlebet website package",
+  "main": "script.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/betlebet/et-le-bet-website.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "license": "MIT"
+}

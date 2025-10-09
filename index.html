@@ -7,6 +7,8 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
+  <!-- Header -->
   <header class="hero">
     <div class="overlay">
       <h1>Bet-le-Bet</h1>
@@ -15,6 +17,7 @@
     </div>
   </header>
 
+  <!-- Navigation -->
   <nav>
     <ul>
       <li><a href="#" onclick="scrollToSection(event, 'services')">Services</a></li>
@@ -23,6 +26,7 @@
     </ul>
   </nav>
 
+  <!-- Services Section -->
   <section id="services" class="services">
     <h2>Our Services</h2>
     <div class="service-grid">
@@ -49,38 +53,66 @@
     </div>
   </section>
 
+  <!-- Booking Section -->
   <section id="book" class="form-section">
     <h2>Book a Service</h2>
-    <form>
-      <input type="text" placeholder="Your Full Name" required />
-      <select required>
+    <form id="bookingForm">
+      <input type="text" name="clientName" placeholder="Your Full Name" required />
+      <select name="service" required>
         <option value="">Select a Service</option>
-        <option>Home Care</option>
-        <option>Hairdressing</option>
-        <option>Tutoring</option>
-        <option>Day Maid</option>
-        <option>Consultancy</option>
+        <option>Home Care & Health Counseling</option>
+        <option>Hairdressing & Beauty</option>
+        <option>Online & In-Person Tutoring</option>
+        <option>Day Maid / Domestic Help</option>
+        <option>Consultancy & Professional Support</option>
       </select>
-      <input type="date" required />
-      <textarea placeholder="Additional Details (optional)"></textarea>
+      <input type="date" name="bookingDate" required />
+      <textarea name="details" placeholder="Additional Details (optional)"></textarea>
       <button type="submit">Submit Booking</button>
     </form>
   </section>
 
+  <!-- Provider Section -->
   <section id="provider" class="form-section">
     <h2>Become a Service Provider</h2>
-    <form>
-      <input type="text" placeholder="Your Full Name" required />
-      <input type="text" placeholder="Type of Service You Provide" required />
-      <input type="text" placeholder="Your Contact Info" required />
+    <form id="providerForm">
+      <input type="text" name="name" placeholder="Full Name" required />
+      <select name="service" id="providerService" required>
+        <option value="">Select a Service</option>
+      </select>
+      <input type="email" name="email" placeholder="Email" required />
+      <input type="text" name="phone" placeholder="Phone Number" required />
+      <input type="text" name="location" placeholder="City / Area" />
       <button type="submit">Submit Application</button>
     </form>
+  </section>
+
+  <!-- Hidden Admin Login & Dashboard -->
+  <section id="adminLogin" class="form-section" style="display: none;">
+    <h2>Admin Access</h2>
+    <form id="adminLoginForm">
+      <input type="password" id="adminPass" placeholder="Enter Admin Password" required />
+      <button type="submit">Access Dashboard</button>
+    </form>
+  </section>
+
+  <section id="dashboard" class="form-section" style="display: none;">
+    <h2>Admin Dashboard</h2>
+    <div id="providersList">
+      <h3>Providers</h3>
+      <ul></ul>
+    </div>
+
+    <div id="bookingsList">
+      <h3>Bookings</h3>
+      <div id="bookingsContainer"></div>
+    </div>
   </section>
 
   <footer>
     © 2025 Bet-le-Bet | Home & Virtual Services
   </footer>
 
-  <script src="script.js"></script>
+  <script type="module" src="script.js"></script>
 </body>
 </html>
